@@ -29,6 +29,38 @@ codex plugin add ub-mode@ub-mode-community
 In the ChatGPT desktop app, restart the app, open Plugins Directory, select
 `ub-mode (unofficial)` from the marketplace sources, and install the plugin.
 
+## Install ub-mode as a standalone Codex skill
+
+The **same workflow** is also published as a standalone skill at
+[`.agents/skills/ub-mode`](.agents/skills/ub-mode/SKILL.md).
+
+It can be installed without installing this marketplace or the plugin.
+
+In a Codex conversation, ask the built-in skill installer:
+
+```text
+$skill-installer install https://github.com/Matzenbacher/ub-mode-codex/tree/main/.agents/skills/ub-mode
+```
+
+For a manual, user-wide installation:
+
+```bash
+mkdir -p ~/.agents/skills
+git clone https://github.com/Matzenbacher/ub-mode-codex.git /tmp/ub-mode-codex
+cp -R /tmp/ub-mode-codex/.agents/skills/ub-mode ~/.agents/skills/
+```
+
+Then open a new Codex session (restart if the skill does not show up) and
+invoke it as `$ub-mode` in a prompt, or inspect `/skills`.
+
+For repo-only usage, keep the `.agents/skills/ub-mode` folder in the
+repository where Codex runs. Installing both the plugin and standalone skill
+may show two entries named `ub-mode`; choose one installation mechanism to
+avoid duplicate activation.
+
+The standalone skill is an **unofficial adaptation** and keeps upstream author
+credits and quality-tool limitations in its `references/` directory.
+
 ## Contents
 
 - `.agents/plugins/marketplace.json` : Codex marketplace catalog
