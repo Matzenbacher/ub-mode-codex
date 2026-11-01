@@ -10,8 +10,7 @@ upstream README also acknowledges influence from @poteto. See
 
 ## Add this GitHub repository as a Codex marketplace
 
-With this repository published on GitHub, run the following
-commands, replacing `Matzenbacher/ub-mode-codex` with its actual slug:
+To add this published repository to Codex, run:
 
 ```sh
 codex plugin marketplace add Matzenbacher/ub-mode-codex
