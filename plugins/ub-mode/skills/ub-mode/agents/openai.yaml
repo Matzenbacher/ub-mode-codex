@@ -1,0 +1,6 @@
+interface:
+  display_name: ub-mode
+  short_description: Disciplined test-first code changes and quality gates
+  default_prompt: Apply ub-mode to this development task, and report verifiable changes.
+policy:
+  allow_implicit_invocation: true

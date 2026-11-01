@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ub-mode",
+  "version": "0.1.0",
+  "description": "Unofficial, independently written developer workflow inspired by Robert C. Martin (Uncle Bob)'s original ub-mode skill.",
+  "keywords": [
+    "clean-code",
+    "tdd",
+    "refactoring",
+    "quality-gates",
+    "uncle-bob"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "ub-mode",
+        "shortDescription": "Discipline for code changes",
+        "longDescription": "An independent adaptation of the ub-mode engineering workflow originally published by Robert C. Martin (Uncle Bob). Use test-first changes, root-cause fixes, refactoring, quality checks and a verifiable action log. Not affiliated with or endorsed by the original author.",
+        "developerName": "Independent adaptation",
+        "category": "Developer Tools",
+        "capabilities": [],
+        "defaultPrompt": [
+          "Use ub-mode to implement this code change in small, tested steps.",
+          "Review these changes using ub-mode's quality gates and action log.",
+          "Apply ub-mode principles to this refactoring without changing behavior."
+        ]
+      }
+    }
+  }
+}

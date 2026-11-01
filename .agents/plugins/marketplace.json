@@ -1,0 +1,20 @@
+{
+  "name": "ub-mode-community",
+  "interface": {
+    "displayName": "ub-mode (unofficial)"
+  },
+  "plugins": [
+    {
+      "name": "ub-mode",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ub-mode"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
